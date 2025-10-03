@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background: #DEE1FF;
+}
+
+#esquerdo{
+
+    display: flex;
+    gap: 19;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.persona{
+    display: flex;
+    justify-content: center;
+    color: #5A94B1;
+    height: 15px;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 19px;
+    
+}
+
+.apelido{
+    background-color: white;
+    border-radius: 20px;
+    width: 390px;
+    height: 30px;
+    gap: 19px;
+}
+
+.apelido p{
+    opacity: 50%;
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.data{
+    background-color: white;
+    border-radius: 20px;
+    width: 390px;
+    height: 30px;
+
+}
+
+.data p{
+    opacity: 50%;
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.phone{
+    background-color: white;
+    border-radius: 20px;
+    width: 390px;
+    height: 30px;
+
+}
+
+.phone p{
+    opacity: 50%;
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.local{
+    background-color: white;
+    border-radius: 20px;
+    width: 390px;
+    height: 30px;
+
+}
+
+.local p{
+    opacity: 50%;
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.cores{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.tema{
+    display: flex;
+    justify-content: flex-start;
+} 
+
+.tema p{
+    color: #392D6E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 130px;
+}
+
+.corroxo img{
+    border-radius: 200px;
+    width: 65px;
+    height: 65px;
+    background-color: #BCC1FF;
+ 
+}
+
+.corroxo p{
+    background: none;
+}
+
+.corverde{
+    border-radius: 200px;
+    width: 65px;
+    height: 65px;
+    background: #3F848C;
+}
+
+.corverde p{
+    background: none;
+}
+
+.direita{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.foto img{
+    height: 254px;
+    width: 295px;
+}
