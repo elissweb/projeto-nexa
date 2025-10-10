@@ -5,26 +5,29 @@
   font-family: Arial, sans-serif;
 }
 
+
 .fundo {
   display: flex;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
+
 .area {
-  width: 70px;
-  background: #bfbaff;
+  width: 6vw;
+  background: #BFBAFF;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 16px;
 }
 
 .perfil {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: #bfbaff;
+  background: #BFBAFF;
 }
 
 .area nav ul {
@@ -33,29 +36,31 @@
 
 .area nav ul li {
   margin: 20px;
-  border: 1px solid white;
+  border: 1px solid #AAA8C5;
   font-size: 40px;
   cursor: pointer;
-  background-color: #bdbdfa;
+  background-color: #DEE1FF;
   width: 50px;
   height: 50px;
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
 }
 
-.logo img {
+.logo img{
   width: 10vw;
 }
 
 .segundo_container {
   flex: 1;
-  background: #d9f7ff;
+  background: #D9F7FF;
   padding: 20px;
   width: 100%;
 }
 
 .busca {
+  width: 81vw;
   margin-bottom: 20px;
 }
 
@@ -66,31 +71,55 @@
   border: 1px solid rgb(255, 255, 255);
 }
 
-.quadrado_roxo {
+.quadrado_roxo{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  background-color: #b9bef2;
+  background-color: #B9BEF2;
   height: 90%;
-  width: 100%;
-  padding: 16px;
+  width: 80vw;
+  padding: 10px; 
+  gap: 13px;  
 }
+  
+.cartoes{
+  display: grid;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  margin: 10px;
+  padding: 10px;   
+  align-items: start;
 
-.coluna1 {
+}
+.coluna1{
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 150px;
 }
 
-.cartoes {
-  display: grid;
-  justify-content: center;
+.card1 img{
+  display: flex;
+  width: 40%;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  background: #D0CDFF;
   align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  /* gap: 35px; */
-  /* margin: 5px;
-    padding: 20px;    */
+  border-radius: 5px;
+  padding: 10px;
+  width: 275px;
+  height: 145px;
+}
+.frase1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #7672AE;
 }
 
 .card {
@@ -98,31 +127,33 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #d0cdff;
+  background: #D0CDFF;
   border-radius: 5px;
   padding: 10px;
   font-weight: bold;
-  font-size: 14px;
-  width: 265px;
-  height: 130px;
+  width: 275px;
+  height: 145px;
+  color: #7672AE;
 }
+
 
 .cardProfissional {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #d0cdff;
+  background: #D0CDFF;
   border-radius: 12px;
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
-  width: 265px;
-  height: 313px;
+  width: 275px;
+  height: 305px;
+  color: #7672AE;
 }
 
-.coluna2 {
+.coluna2{
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -134,21 +165,23 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #d0cdff;
+  background: #D0CDFF;
   border-radius: 5px;
   padding: 10px;
   font-weight: bold;
-
+  color: #7672AE;
   font-size: 14px;
-  width: 265px;
-  height: 165px;
+  width: 275px;
+  height: 145px;
 }
 
-.coluna3 {
+
+.coluna3{
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 300px;
+  
 }
 
 .card_destaque {
@@ -157,7 +190,7 @@
   background: #fddedf;
   font-size: 20px;
   width: 250px;
-  height: 455px;
+  height: 464px;
   border-radius: 5px;
   text-align: center;
   align-items: center;
@@ -165,25 +198,27 @@
   padding: 10px;
 }
 
-.coluna4 {
+
+.coluna4{
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 300px;
 }
 
-.colunas {
+.colunas{
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #d0cdff;
+  background: #D0CDFF;
   border-radius: 5px;
   padding: 10px;
   font-weight: bold;
   font-size: 14px;
   width: 175px;
-  height: 130px;
+  height: 145px;
+  color: #7672AE;
 }
 
 .cardmedia {
@@ -192,11 +227,14 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: #d0cdff;
+  background: #D0CDFF;
   border-radius: 5px;
   padding: 13px;
   font-weight: bold;
   font-size: 14px;
   width: 175px;
-  height: 313px;
+  height: 304px;
+  color: #7672AE;
 }
+
+
