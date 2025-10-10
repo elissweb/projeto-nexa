@@ -16,6 +16,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin: 50px;
+    top: 20%;
+    left: 30px;
+    position: absolute;
+    
 }
 
 .persona{
@@ -23,6 +28,8 @@ body{
     justify-content: center;
     color: #5A94B1;
     height: 15px;
+    
+    
 }
 
 .cadastro{
@@ -36,7 +43,7 @@ body{
 .apelido{
     background-color: white;
     border-radius: 20px;
-    width: 390px;
+    width: 339px;
     height: 30px;
     gap: 19px;
 }
@@ -52,7 +59,7 @@ body{
 .data{
     background-color: white;
     border-radius: 20px;
-    width: 390px;
+    width: 339px;
     height: 30px;
 
 }
@@ -68,7 +75,7 @@ body{
 .phone{
     background-color: white;
     border-radius: 20px;
-    width: 390px;
+    width: 339px;
     height: 30px;
 
 }
@@ -84,7 +91,7 @@ body{
 .local{
     background-color: white;
     border-radius: 20px;
-    width: 390px;
+    width: 339px;
     height: 30px;
 
 }
@@ -143,9 +150,14 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    margin: 50px;
 }
 
 .foto img{
-    height: 254px;
-    width: 295px;
+    height: 350px;
+    width: 394px;
+    top: 20%;
+    right: 50px;
+    object-fit: cover;
+    position: absolute;
 }
