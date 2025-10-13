@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.area {
+  width: 300px;
+  background: #c4c0fb;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.perfil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.icons span {
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Chat */
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 10px;
+  background: #dee1ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Cabeçalho do chat */
+.chat-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mensagens {
+  flex: 1;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.data {
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.mensagem {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.mensagem_enviada {
+  background: #fff;
+  align-self: flex-start;
+  border-radius: 100px;
+}
+
+.mensagem_enviada2 {
+  background: #fff;
+  align-self: flex-start;
+  border-radius: 100px;
+}
+
+.hora {
+  display: block;
+  font-size: 10px;
+  color: #888;
+  margin-top: 3px;
+}
+
+/* Input do chat */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 5px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ===== Área principal ===== */
+.segundo_container {
+  flex: 1;
+  background: #d9f7ff;
+  padding: 20px;
+}
+
+/* Barra de busca */
+.busca {
+  margin-bottom: 20px;
+}
+
+.busca input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Grid dos cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  gap: 15px;
+}
+
+.card {
+  background: #d0cdff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Cores especiais */
+.destaque-laranja {
+  background: #d0cdff;
+  color: #fff;
+}
+
+.destaque-vermelho {
+  background: #d0cdff;
+  color: rgb(146, 100, 255);
+}
+
+.grande {
+  grid-row: span 2;
+  background: #d0cdff;
+  font-size: 18px;
+}
+svg {
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+button {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.quadrado-roxo {
+  background-color: #b9bef2;
+  width: 1000px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+}
