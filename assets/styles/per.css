@@ -168,6 +168,20 @@ body{
     display: flex ;
     background-color: #67A4B4;
     margin: 10px;
-    width: 80px;
+    width: 158px;
+    height: 26px;
     border-radius: 20px;
+}
+
+.prox p{
+    color: white;
+    height: 24px;
+    width: 69px;
+    padding-left: 50px;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    padding-right: 170px;
 }
