@@ -37,53 +37,87 @@
   cursor: pointer;
 }
 
-/* Chat */
 .chat {
-  display: flex;
   flex-direction: column;
   flex: 1;
   margin-top: 10px;
-  background: #bdbdfa;
+  font-size: 15px;
+  background: #dee1ff;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
+  gap: 5px;
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-end; */
 }
 
-/* Cabeçalho do chat */
+.camera img {
+  display: flex;
+  width: 25px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.micro img {
+  display: flex;
+  width: 25px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
 .chat-header {
   font-weight: bold;
   margin-bottom: 10px;
+  color: #7773b1;
+  display: flex;
+  align-items: center;
 }
 
 .mensagens {
   flex: 1;
   overflow-y: auto;
   font-size: 14px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .data {
   text-align: center;
   font-size: 12px;
   margin: 10px 0;
-  color: #555;
+  color: #595599;
+  background-color: #c2bef2;
+  border-radius: 20px;
+  border-color: #595599;
 }
 
 .mensagem {
   margin-bottom: 10px;
   padding: 8px 12px;
-  border-radius: 10px;
+  border-radius: 20px;
   max-width: 80%;
+  gap: 10px;
 }
-
+#cumprimento {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 .mensagem_enviada {
   background: #fff;
   align-self: flex-start;
-  border-radius: 100px;
+  border-radius: 20px;
+  gap: 10px;
+  width: 9vw;
 }
 
 .mensagem_enviada2 {
+  display: flex;
   background: #fff;
   align-self: flex-start;
-  border-radius: 100px;
+  border-radius: 20px;
+  width: 18vw;
+  height: 30px;
+  gap: 10px;
 }
 
 .hora {
@@ -93,11 +127,12 @@
   margin-top: 3px;
 }
 
-/* Input do chat */
 .chat-input {
   display: flex;
   border-top: 1px solid #ccc;
   padding-top: 5px;
+  justify-content: end;
+  align-items: flex-end;
 }
 
 .chat-input input {
@@ -116,14 +151,13 @@
   cursor: pointer;
 }
 
-/* ===== Área principal ===== */
 .segundo_container {
   flex: 1;
   background: #d9f7ff;
   padding: 20px;
+  width: 100%;
 }
 
-/* Barra de busca */
 .busca {
   margin-bottom: 20px;
 }
@@ -135,12 +169,33 @@
   border: 1px solid #ccc;
 }
 
-/* Grid dos cards */
+.quadrado-roxo {
+  display: grid;
+  background-color: #b9bef2;
+  height: 90%;
+  width: 70vw;
+  padding: 10px;
+  margin: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 150px;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  margin: 10px;
+  padding: 10x;
+  margin-left: 40px;
+}
+
+.coluna1 {
+  display: flex;
+  flex-direction: column;
   gap: 15px;
+  grid-auto-rows: 150px;
 }
 
 .card {
@@ -153,29 +208,71 @@
   padding: 10px;
   font-weight: bold;
   font-size: 14px;
+  width: 275px;
+  height: 145px;
+  border-radius: 5px;
 }
 
-/* Cores especiais */
-.destaque-laranja {
+.cardProfissional {
+  display: flex;
+  text-align: center;
+  background: #d0cdff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  width: 275px;
+  height: 305px;
+  color: #7672ae;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardProfissional img {
+  width: 200px;
+}
+
+.coluna2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  grid-auto-rows: 150px;
+}
+
+.cardDestaque {
   background: #d0cdff;
   color: #fff;
+  width: 250px;
+  height: 465px;
+  border-radius: 5px;
 }
 
-.destaque-vermelho {
+.coluna3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  grid-auto-rows: 150px;
+}
+.cardmaior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: #d0cdff;
-  color: rgb(146, 100, 255);
-}
-
-.grande {
-  grid-row: span 2;
-  background: #d0a4ff;
-  font-size: 18px;
+  border-radius: 5px;
+  padding: 70px;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 275px;
+  height: 145px;
 }
 svg {
-  width: 17px;
+  width: 18px;
   display: flex;
   justify-content: center;
-  color: #5151ff;
+  color: black;
 }
 
 button {
@@ -183,12 +280,4 @@ button {
   display: flex;
   justify-content: center;
   color: black;
-}
-
-.quadrado-roxo {
-  background-color: #b9bef2;
-  width: 1000px;
-  height: 500px;
-  padding: 10px;
-  margin: 10px;
 }
