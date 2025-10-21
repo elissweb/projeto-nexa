@@ -25,30 +25,33 @@
 }
 
 .perfil {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ddd;
+  width: 4vw;
 }
 
-.icons span {
+.fotoprof {
+  display: flex;
+  width: 3vw;
+}
+
+.icons {
+  width: 3vw;
   margin-left: 10px;
   font-size: 18px;
   cursor: pointer;
 }
 
+.funcoes {
+  display: flex;
+  justify-content: flex-end;
+}
 .chat {
   flex-direction: column;
   flex: 1;
-  margin-top: 10px;
   font-size: 15px;
   background: #dee1ff;
   border-radius: 10px;
   padding: 5px;
   gap: 5px;
-  /* display: flex;
-  justify-content: center;
-  align-items: flex-end; */
 }
 
 .camera img {
@@ -83,8 +86,10 @@
 .data {
   text-align: center;
   font-size: 12px;
-  margin: 10px 0;
+  margin: 10px;
   color: #595599;
+  height: 3vh;
+  padding: 3px;
   background-color: #c2bef2;
   border-radius: 20px;
   border-color: #595599;
@@ -131,8 +136,8 @@
   display: flex;
   border-top: 1px solid #ccc;
   padding-top: 5px;
-  justify-content: end;
   align-items: flex-end;
+  margin-top: 25vw;
 }
 
 .chat-input input {
