@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fundo{
+    min-height: 100vh;
+    background: #DEE1FF;
+    width: 100%;
+    height: 100%;
+}
+
+.bemvindo{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #42A1A1;
+}
+
+.ao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #42A1A1;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

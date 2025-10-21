@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DEE1FF;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 19px;
+   
+}
+
+
+
+.email{
+    background-color: #67A4B4;
+    border-radius: 20px;
+    width: 211px;
+    height: 48px;
+    color: white;
+    padding: 15px;
+    padding-left: 85px;
+    
+}
+
+.nome-usuario{
+    background-color: #67A4B4;
+    border-radius: 20px;
+    width: 211px;
+    height: 48px;
+    color: white;
+    padding: 15px;
+    padding-left: 50px;
+}
+
+.senha{
+    background-color: #67A4B4;
+    border-radius: 20px;
+    width: 211px;
+    height: 48px;
+    color: white;
+    padding: 15px;
+    padding-left: 85px;
+}
+.mostrar-senha{
+    color: #67A4B4;
+    padding-right: 80px;
+    gap: 20px;
+   
+}
+
+.mostrar-senha img{
+    width: 10px;
+    height: 10px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 50px;
+   
+}
+
+.prox{
+    background-color: #67A4B4;
+    border-radius: 20px;
+    width: 211px;
+    height: 48px;
+    color: white;
+    padding: 15px;
+    padding-left: 80px;
+   
+    
+
+}
