@@ -52,6 +52,7 @@
   border-radius: 10px;
   padding: 5px;
   gap: 5px;
+  border: 1px solid #aaa8c5;
 }
 
 .camera img {
@@ -92,7 +93,12 @@
   padding: 3px;
   background-color: #c2bef2;
   border-radius: 20px;
-  border-color: #595599;
+  border: 1px solid #7f7bbc;
+}
+
+.conversa {
+  display: flex;
+  width: 40px;
 }
 
 .mensagem {
@@ -203,9 +209,10 @@
   grid-auto-rows: 150px;
 }
 
-.card {
+.card1 {
   background: #d0cdff;
   border-radius: 12px;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,6 +225,19 @@
   border-radius: 5px;
 }
 
+.card1 img {
+  display: flex;
+  width: 40%;
+}
+
+.frase1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #7672ae;
+}
 .cardProfissional {
   display: flex;
   text-align: center;
@@ -246,6 +266,21 @@
   grid-auto-rows: 150px;
 }
 
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f7b35e;
+  font-size: 45px;
+  border-radius: 5px;
+  padding: 11px;
+  font-weight: bolder;
+  width: 275px;
+  height: 145px;
+  color: #994b9a;
+  font-family: "Cantora One", sans-serif;
+}
 .cardDestaque {
   background: #d0cdff;
   color: #fff;
@@ -265,13 +300,37 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #d0cdff;
+  background: #ffffff;
   border-radius: 5px;
-  padding: 70px;
+  padding: 80px;
   font-weight: bolder;
-  font-size: 20px;
+  color: #760306;
+  font-size: 25px;
   width: 275px;
   height: 145px;
+  flex-direction: column;
+  font-family: "Libre Baskerville", serif;
+}
+
+.cardcolunas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f5cbe3;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  width: 275px;
+  height: 145px;
+  color: #000000;
+  flex-direction: column;
+}
+
+.cardcolunas img {
+  display: flex;
+  width: 40%;
 }
 svg {
   width: 18px;
@@ -285,4 +344,35 @@ button {
   display: flex;
   justify-content: center;
   color: black;
+}
+
+.cardDestaque {
+  display: flex;
+  background: #ffeef4;
+  font-size: 35px;
+  width: 250px;
+  height: 464px;
+  color: #eb7699;
+  font-weight: bold;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+  font-family: "Libre Baskerville", serif;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bolder;
+  gap: 10px;
+}
+
+.cap {
+  display: flex;
+  color: #eb7699;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.cardDestaque img {
+  display: flex;
+  width: 40%;
 }
