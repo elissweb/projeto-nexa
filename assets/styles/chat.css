@@ -4,12 +4,10 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
 .container {
   display: flex;
   height: 100vh;
 }
-
 .area {
   width: 300px;
   background: #c4c0fb;
@@ -17,29 +15,24 @@
   flex-direction: column;
   padding: 15px;
 }
-
 .icones {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .perfil {
   width: 4vw;
 }
-
 .fotoprof {
   display: flex;
   width: 3vw;
 }
-
 .icons {
   width: 3vw;
   margin-left: 10px;
   font-size: 18px;
   cursor: pointer;
 }
-
 .funcoes {
   display: flex;
   justify-content: flex-end;
@@ -54,7 +47,6 @@
   gap: 5px;
   border: 1px solid #aaa8c5;
 }
-
 .camera img {
   display: flex;
   width: 25px;
@@ -67,7 +59,6 @@
   flex-direction: row;
   align-items: flex-end;
 }
-
 .chat-header {
   font-weight: bold;
   margin-bottom: 10px;
@@ -75,7 +66,6 @@
   display: flex;
   align-items: center;
 }
-
 .mensagens {
   flex: 1;
   overflow-y: auto;
@@ -83,7 +73,6 @@
   justify-content: center;
   align-items: flex-start;
 }
-
 .data {
   text-align: center;
   font-size: 12px;
@@ -95,12 +84,10 @@
   border-radius: 20px;
   border: 1px solid #7f7bbc;
 }
-
 .conversa {
   display: flex;
   width: 40px;
 }
-
 .mensagem {
   margin-bottom: 10px;
   padding: 8px 12px;
@@ -120,7 +107,6 @@
   gap: 10px;
   width: 9vw;
 }
-
 .mensagem_enviada2 {
   display: flex;
   background: #fff;
@@ -130,14 +116,12 @@
   height: 30px;
   gap: 10px;
 }
-
 .hora {
   display: block;
   font-size: 10px;
   color: #888;
   margin-top: 3px;
 }
-
 .chat-input {
   display: flex;
   border-top: 1px solid #ccc;
@@ -145,7 +129,6 @@
   align-items: flex-end;
   margin-top: 25vw;
 }
-
 .chat-input input {
   flex: 1;
   border: none;
@@ -153,7 +136,6 @@
   border-radius: 20px;
   outline: none;
 }
-
 .chat-input button {
   margin-left: 5px;
   border: none;
@@ -161,25 +143,21 @@
   font-size: 18px;
   cursor: pointer;
 }
-
 .segundo_container {
   flex: 1;
   background: #d9f7ff;
   padding: 20px;
   width: 100%;
 }
-
 .busca {
   margin-bottom: 20px;
 }
-
 .busca input {
   width: 100%;
   padding: 10px;
   border-radius: 20px;
   border: 1px solid #ccc;
 }
-
 .quadrado-roxo {
   display: grid;
   background-color: #b9bef2;
@@ -190,7 +168,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 13px;
 }
-
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -201,14 +178,12 @@
   padding: 10x;
   margin-left: 40px;
 }
-
 .coluna1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 150px;
 }
-
 .card1 {
   background: #d0cdff;
   border-radius: 12px;
@@ -224,12 +199,10 @@
   height: 145px;
   border-radius: 5px;
 }
-
 .card1 img {
   display: flex;
   width: 40%;
 }
-
 .frase1 {
   display: flex;
   align-items: center;
@@ -254,18 +227,15 @@
   align-items: center;
   gap: 10px;
 }
-
 .cardProfissional img {
   width: 200px;
 }
-
 .coluna2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 150px;
 }
-
 .card {
   display: flex;
   align-items: center;
@@ -288,7 +258,6 @@
   height: 465px;
   border-radius: 5px;
 }
-
 .coluna3 {
   display: flex;
   flex-direction: column;
@@ -311,7 +280,6 @@
   flex-direction: column;
   font-family: "Libre Baskerville", serif;
 }
-
 .cardcolunas {
   display: flex;
   align-items: center;
@@ -327,7 +295,6 @@
   color: #000000;
   flex-direction: column;
 }
-
 .cardcolunas img {
   display: flex;
   width: 40%;
@@ -338,14 +305,12 @@ svg {
   justify-content: center;
   color: black;
 }
-
 button {
   width: 20px;
   display: flex;
   justify-content: center;
   color: black;
 }
-
 .cardDestaque {
   display: flex;
   background: #ffeef4;
@@ -364,14 +329,12 @@ button {
   font-weight: bolder;
   gap: 10px;
 }
-
 .cap {
   display: flex;
   color: #eb7699;
   justify-content: center;
   font-size: 10px;
 }
-
 .cardDestaque img {
   display: flex;
   width: 40%;
