@@ -1,169 +1,104 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ctt.css">
+    <script src="../scripts/ctt.js"></script>
+    <title>CONTATOS NEXA</title>
+</head>
+<body>
 
-.container {
-  display: flex;
-  height: 100vh;
-}
+    
+  <div class="container">
 
-.area {
-  width: 300px;
-  background: #c4c0fb;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-}
+    <aside class="area">
+      <div class="icones">
+        <div class="perfil">
+          <img src="../images/circle-user-regular-full.svg" alt="" srcset="">
+        </div>
+        <div class="icons">
+          <div class="funcoes">
+            <img src="../images/gear.svg" alt="" srcset="">
+            <img src="../images/messagecontorno.svg" alt="" srcset="">
+          </div>
+        </div>
+      </div>
 
-.icones {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+      <div class="conversa">
+        <img src="../images/phone2.svg" alt="" srcset="">
+      </div>
 
-.perfil {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ddd;
-}
+      <div class="Profissionais">
+        <div class="lista">
+          <h1>Nossos Profissionais:</h1>
 
-.icons span {
-  margin-left: 10px;
-  font-size: 18px;
-  cursor: pointer;
-}
+          <div class="Contatos"></div>
+        </div>
 
-.segundo_container {
-  flex: 1;
-  background: #d9f7ff;
-  padding: 20px;
-  width: 100%;
-}
+        <div class="chat-header">
+          <img src="../images/circle-user-regular-full.svg" alt="" srcset="">
+          <img src="../images/circle-user-regular-full.svg" alt="" srcset="">
+          <img src="../images/circle-user-regular-full.svg" alt="" srcset="">
+          <img src="../images/circle-user-regular-full.svg" alt="" srcset="">
+          <img src="../images/circle-user-regular-full.svg" alt="" srcset="">
+          <div class="foto-nomes">
+            <p>Dra. Franciny</p>
+            <p>Da. Elisa Reinert</p>
+            <p>Dra. Witória Carvalho</p>
+            <p> Dra. Júlia Alves</p>
+            <p>Dra. Fidelis Francini</p>
+            <p>Dra.  Laryssa</p>
+            <p>Dra. Mariana Lopes</p>
+          </div>
+        </div>
 
-.busca {
-  margin-bottom: 20px;
-}
+    </aside>
 
-.busca input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-}
+    <main class="segundo_container">
+      
+      <header class="busca">
+        <input type="text" placeholder="🔎  O que você procura?">
+      </header>
 
-.quadrado-roxo {
-  display: grid;
-  background-color: #b9bef2;
-  height: 90%;
-  width: 70vw;
-  padding: 10px;
-  margin: 16px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 13px;
-}
+      <div class="quadrado-roxo">
+        <section class="cards">
+          <div class="coluna1"> 
+            <div class="card1">
+              <img src="../images/calendar.svg" alt="" srcset="">
+              <div class="frase1">Como está se sentindo hoje? </div>
+            </div>
+            <div class="cardProfissional"> 
+              <img src="../images/profissional.png" alt="" srcset="">
+              Profissional
+            </div>
+          </div>
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  width: 100%;
-  gap: 20px;
-  margin: 10px;
-  padding: 10x;
-  margin-left: 40px;
-}
+          <div class="coluna2"> 
+            <div class="card">Honre quem você é</div>
+            <div class="cardmaior">Seja você. Por você. Para você.</div>
+            <div class="cardcolunas">
+              <img src="../images/espelho.svg" alt="" srcset="">
+              Você é linda</div>
+          </div>
+          
+          <divc class="coluna3">
+            <div class="cardDestaque">
+              <img src="../images/ribbon.svg" alt="" srcset="">
+              Você é forte e corajosa
+              <div class="cap"> Josué 1:9</div>
+            </div>
+            
+          </div>
 
-.coluna1 {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  grid-auto-rows: 150px;
-}
+      
 
-.card {
-  background: #d0cdff;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 14px;
-  width: 275px;
-  height: 145px;
-  border-radius: 5px;
-}
+    </main>
+  </div>
+</body>
+</html>
 
-.cardProfissional {
-  display: flex;
-  text-align: center;
-  background: #d0cdff;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 14px;
-  width: 275px;
-  height: 305px;
-  color: #7672ae;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.cardProfissional img {
-  width: 200px;
-}
-
-.coluna2 {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  grid-auto-rows: 150px;
-}
-
-.cardDestaque {
-  background: #d0cdff;
-  color: #fff;
-  width: 250px;
-  height: 465px;
-  border-radius: 5px;
-}
-
-.coluna3 {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  grid-auto-rows: 150px;
-}
-.cardmaior {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #d0cdff;
-  border-radius: 5px;
-  padding: 70px;
-  font-weight: bolder;
-  font-size: 20px;
-  width: 275px;
-  height: 145px;
-}
-svg {
-  width: 18px;
-  display: flex;
-  justify-content: center;
-  color: black;
-}
-
-button {
-  width: 20px;
-  display: flex;
-  justify-content: center;
-  color: black;
-}
+    
+</body>
+</html>
