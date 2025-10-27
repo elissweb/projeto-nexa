@@ -23,7 +23,6 @@
 .perfil {
   width: 4vw;
 }
-
 .icons img {
   display: flex;
   width: 3vw;
@@ -36,35 +35,37 @@
   justify-content: flex-end;
 }
 .Profissionais {
-  flex-direction: column;
-  font-size: 15px;
   width: 19vw;
+  flex-direction: column;
   height: 90%;
   background: #dee1ff;
   border-radius: 10px;
   padding: 5px;
-  gap: 5px;
   border: 1px solid #aaa8c5;
 }
-
-.chat-header {
+.lista {
   display: flex;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #7773b1;
-  flex-direction: column;
-}
-.foto-nomes {
-  display: flex;
-  width: 50px;
-  flex-direction: column;
-}
-.mensagens {
-  flex: 1;
-  overflow-y: auto;
-  font-size: 14px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  font-size: 10px;
+  color: #736eb3;
+}
+.chat-header img {
+  display: flex;
+  width: 4vw;
+  margin-bottom: 3px;
+  gap: 15px;
+  color: #7773b1;
+}
+.nomes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 4px;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #7773b1;
 }
 
 .conversa {
@@ -85,14 +86,6 @@
   height: 50px;
 }
 
-.mensagem {
-  margin-bottom: 10px;
-  padding: 8px 12px;
-  border-radius: 20px;
-  max-width: 80%;
-  gap: 10px;
-}
-
 .segundo_container {
   flex: 1;
   background: #d9f7ff;
@@ -100,14 +93,28 @@
   width: 100%;
 }
 .busca {
-  margin-bottom: 20px;
-}
-.busca input {
+  display: flex;
+  width: 81vw;
+  margin-bottom: 21px;
   width: 100%;
-  padding: 10px;
+  background-color: #ffffff;
+  padding: 5px;
   border-radius: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  color: #ffffff;
 }
+
+.busca p {
+  display: flex;
+  align-items: center;
+  color: #a8a8a8;
+}
+.busca img {
+  display: flex;
+  width: 2vw;
+}
+
 .quadrado-roxo {
   display: grid;
   background-color: #b9bef2;
@@ -201,13 +208,7 @@
   color: #994b9a;
   font-family: "Cantora One", sans-serif;
 }
-.cardDestaque {
-  background: #d0cdff;
-  color: #fff;
-  width: 250px;
-  height: 465px;
-  border-radius: 5px;
-}
+
 .coluna3 {
   display: flex;
   flex-direction: column;
@@ -249,18 +250,7 @@
   display: flex;
   width: 40%;
 }
-svg {
-  width: 18px;
-  display: flex;
-  justify-content: center;
-  color: black;
-}
-button {
-  width: 20px;
-  display: flex;
-  justify-content: center;
-  color: black;
-}
+
 .cardDestaque {
   display: flex;
   background: #ffeef4;
