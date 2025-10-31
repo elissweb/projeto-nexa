@@ -98,16 +98,6 @@
   width: 4vw;
   padding: 3px;
 }
-.escuro {
-  background-color: #c4c0fb;
-  color: #ffffff;
-  border: 40px;
-  border-radius: 7px;
-  font-size: 15px;
-  margin: 10px;
-  width: 4vw;
-  padding: 3px;
-}
 
 .Inf {
   display: flex;
