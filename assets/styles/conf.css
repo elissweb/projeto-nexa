@@ -159,10 +159,10 @@
   width: 2vw;
 }
 .quadrado-roxo {
+  grid-template-columns: repeat(4, 1fr);
   display: grid;
   background-color: #b9bef2;
-  height: 80vh;
-  width: 65vw;
+  width: 90%;
   padding: 10px;
   margin: 20px;
   grid-template-columns: repeat(3, 1fr);
