@@ -19,4 +19,12 @@ server.use(rotaMensagens);
 server.get("/", (req, res) => {
   res.json(200);
 });
-server.listen(3000, () => console.log("Rodando"));
+// Use PORT env var if provided, otherwise default to 3000
+const PORT = process.env.PORT || 3000;
+
+// endpoint to return the current port
+server.get('/porta', (req, res) => {
+  res.json({ port: Number(PORT) });
+});
+
+server.listen(PORT, () => console.log(`Rodando na porta ${PORT}`));
