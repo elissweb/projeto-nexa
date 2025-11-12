@@ -21,44 +21,63 @@ body {
   gap: 19px;
 }
 
-.email {
+.email input {
   background-color: #67a4b4;
   border-radius: 20px;
   width: 211px;
   height: 48px;
   color: white;
   padding: 15px;
-  padding-left: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #67a4b4 solid;
+
+  border-top: 1px solid #67a4b4;
+  /* padding-top: 5px;
+  justify-items: start;
+  align-items: stretch;
+  justify-content: space-evenly; */
 }
 
-.nome-usuario {
+.nome-usuario input {
   background-color: #67a4b4;
   border-radius: 20px;
   width: 211px;
   height: 48px;
   color: white;
   padding: 15px;
-  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #67a4b4 solid;
+
+  border-top: 1px solid #67a4b4;
 }
 
-.senha {
+.senha input {
   background-color: #67a4b4;
   border-radius: 20px;
   width: 211px;
   height: 48px;
   color: white;
   padding: 15px;
-  padding-left: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #67a4b4 solid;
+
+  border-top: 1px solid #67a4b4;
 }
 .mostrar-senha {
+  display: flex;
   color: #67a4b4;
-  padding-right: 80px;
   gap: 20px;
 }
 
-.mostrar-senha img {
-  width: 10px;
-  height: 10px;
+.mostrar-senha button {
+  width: 20px;
+  border: 1px #67a4b4 solid;
 }
 
 .botao {
@@ -69,12 +88,14 @@ body {
   padding: 50px;
 }
 
-.prox {
+.prox button {
   background-color: #67a4b4;
   border-radius: 20px;
   width: 211px;
   height: 48px;
   color: white;
   padding: 15px;
-  padding-left: 80px;
+  display: flex;
+  justify-content: center;
+  border: 1px #67a4b4 solid;
 }
