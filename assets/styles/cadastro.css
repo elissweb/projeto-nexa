@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-.cadastro {
+.cadastro button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,4 +66,14 @@
   width: 5px;
   height: 35px;
   border-radius: 20px;
+}
+
+.google button {
+  border-radius: 25px;
+  border: 1px #ffff solid;
+}
+
+.facebook button {
+  border-radius: 25px;
+  border: 1px #ffff solid;
 }
