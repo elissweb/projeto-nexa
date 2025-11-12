@@ -23,18 +23,40 @@ rotaChat.post("/chats", async (req, res) => {
   }); // Debug
 
   try {
+    // Validate required IDs
+    if (!usuarioId || !profissionaisId) {
+      return res
+        .status(400)
+        .json({ mensagem: "usuarioId e profissionaisId são obrigatórios" });
+    }
+
+    const userIdNum = Number(usuarioId);
+    const profIdNum = Number(profissionaisId);
+
+    // Check that the related records actually exist to avoid Prisma P2025
+    const usuarioExist = await db.usuario.findUnique({ where: { id: userIdNum } });
+    if (!usuarioExist) {
+      return res.status(404).json({ mensagem: `Usuario com id ${userIdNum} não encontrado` });
+    }
+
+    const profissionalExist = await db.profissionais.findUnique({ where: { id: profIdNum } });
+    if (!profissionalExist) {
+      return res.status(404).json({ mensagem: `Profissional com id ${profIdNum} não encontrado` });
+    }
+
+    // Now it's safe to create the chat with nested connect
     await db.chat.create({
       data: {
         data: data,
         mensagem: mensagem,
         usuario: {
           connect: {
-            id: usuarioId,
+            id: userIdNum,
           },
         },
         profissionais: {
           connect: {
-            id: profissionaisId,
+            id: profIdNum,
           },
         },
       },
@@ -43,9 +65,11 @@ rotaChat.post("/chats", async (req, res) => {
     res.status(201).json({ mensagem: "Chat criado com sucesso" });
   } catch (error) {
     console.error("Erro completo:", error);
-    res
-      .status(400)
-      .json({ mensagem: "Erro ao criar o chat", error: error.message });
+    // Prisma P2025 means a nested connect failed; surface a helpful message
+    if (error && error.code === "P2025") {
+      return res.status(400).json({ mensagem: "Falha ao conectar relações: verifique os ids fornecidos", detalhe: error.meta });
+    }
+    res.status(400).json({ mensagem: "Erro ao criar o chat", error: error.message });
   }
 });
 

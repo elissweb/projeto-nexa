@@ -11,15 +11,19 @@ rotaProfissional.get("/profissionais", async (req, res) => {
 rotaProfissional.post("/profissionais", async (req, res) => {
   const { nome, contato, chat } = req.body;
 
-  await db.profissional.create({
-    data: {
-      nome,
-      contato,
-      chat,
-    },
-  });
-
-  res.json({ mensagem: "okay" });
+  // only write scalar fields; 'chat' is a relation (Chat[]), handle relations separately
+  try {
+    const created = await db.profissionais.create({
+      data: {
+        nome,
+        contato,
+      },
+    });
+    res.status(201).json(created);
+  } catch (error) {
+    console.error('Erro ao criar profissional:', error);
+    res.status(500).json({ mensagem: 'Erro ao criar profissional', error: error.message });
+  }
 });
 
 rotaProfissional.delete("/profissionais/:id", async (req, res) => {
@@ -30,7 +34,7 @@ rotaProfissional.delete("/profissionais/:id", async (req, res) => {
   res.json({ mensagem: "okay" });
 });
 
-rotaProfissional.put("/profissionais/id", async (req, res) => {
+rotaProfissional.put("/profissionais/:id", async (req, res) => {
   const id = Number(req.params.id);
   const data = {};
 
