@@ -1,171 +1,185 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #dee1ff;
+  background-color: #DEE1FF;
   background-image: url(../images/logoopaca.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-clip: initial;
   justify-content: center;
+  
 }
 
-.titulo {
+    
+
+.titulo{
   display: flex;
   justify-content: center;
   font-size: 40px;
-  color: #66629a;
+  color: #66629A;
   font-family: "Pattaya", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.perfil img {
+.perfil img{
   width: 34px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-start; 
 }
 
-.inseguranças {
+.inseguranças input{
   background-color: white;
   border-radius: 20px;
   width: 390px;
   height: 40px;
   gap: 19px;
+  border: #ffff;
+  padding: 5px;
 }
 
-.inseguranças p {
-  color: #7773b1;
+.inseguranças p{
+  color: #7773B1;
   background: none;
   display: flex;
   justify-content: flex-start;
   padding: 10px;
+  
 }
 
-.autoestima {
+.autoestima input{
   background-color: white;
   border-radius: 20px;
   width: 390px;
   height: 40px;
+  border: #ffff;
+  padding: 5px;
+
 }
 
-.autoestima p {
-  color: #7773b1;
+.autoestima p{
+  color: #7773B1;
   background: none;
   display: flex;
   justify-content: flex-start;
-  padding: 10px;
+  padding: 10px;;
 }
 
-.confiança {
+.confiança input{
   background-color: white;
   border-radius: 20px;
   width: 390px;
   height: 40px;
+  border: #ffff;
+  padding: 5px;
+
 }
 
-.confiança p {
-  color: #7773b1;
+.confiança p{
+  color: #7773B1;
   background: none;
   display: flex;
   justify-content: flex-start;
   padding: 10px;
 }
 
-.medo {
+.medo input{
   background-color: white;
   border-radius: 20px;
   width: 390px;
   height: 40px;
+  border: #ffff;
+  padding: 5px;
 }
 
-.medo p {
-  color: #7773b1;
+.medo p{
+  color: #7773B1;
   background: none;
   display: flex;
   justify-content: flex-start;
   padding: 10px;
 }
 
-.avaliação {
+.avaliação input{
   background-color: white;
   border-radius: 20px;
   width: 390px;
   height: 40px;
+  border: #ffff;
+  padding: 5px;
 }
 
-.avaliação p {
-  color: #7773b1;
+.avaliação p{
+  color: #7773B1;
   background: none;
   display: flex;
   justify-content: flex-start;
   padding: 10px;
-}
+} 
 
-.melhoras {
+.melhoras input{
   background-color: white;
   border-radius: 20px;
   width: 390px;
   height: 40px;
+  border: #ffff;
 }
 
-p {
-  color: #7773b1;
+p{
+  color: #7773B1;
   background: none;
   display: flex;
   justify-content: flex-start;
   padding: 10px;
-  font-family: arial, sans-serif;
+  font-family: arial, sans-serif;   
 }
 
-.perguntas1 {
+
+
+.perguntas1{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   gap: 15px;
 }
 
-.perguntas2 {
+.perguntas2{
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   gap: 15px;
 }
 
-.questionario {
+.questionario{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 45px;
   margin: 70px;
+  
 }
 
-.botao {
-  display: flex;
-  background-color: #67a4b4;
+.botao button{
+  display: flex ;
+  background-color: #67A4B4;
   align-items: center;
+  justify-content: center;
   margin: 10px;
   width: 158px;
   height: 35px;
   border-radius: 20px;
 }
 
-.botao p {
-  display: flex;
-  align-items: center;
-  color: white;
-  height: 24px;
-  width: 69px;
-  padding-left: 60px;
-}
-
 .entre {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
